@@ -2202,32 +2202,6 @@
             <small class="type">idea</small>
         </div>
     </article>
-
-
-
-    <script>
-        async function loadArticles() {
-            // Cambia esto por la lista de tus archivos en la carpeta 'articles'
-            const articles = [
-                'articles/article1.html',
-                'articles/article2.html',
-                'articles/article3.html',
-                // Agrega más archivos aquí a medida que los crees
-            ];
-
-            const container = document.getElementById('articles-container');
-
-            for (const article of articles) {
-                const response = await fetch(article);
-                const articleHTML = await response.text();
-                const div = document.createElement('div');
-                div.innerHTML = articleHTML; // Inserta el contenido del artículo
-                container.appendChild(div);
-            }
-        }
-
-        loadArticles();
-    </script>
     
 </body>
 
